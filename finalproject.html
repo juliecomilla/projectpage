@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Projects</title>
+    <style>
+      body {
+        font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+        background-color: lightseagreen;
+      }
+      section {
+        margin: 120px 0;
+      }
+      
+      h2 {
+        color: #272044;
+        text-align: center;
+        font-size: 32px;
+      }
+      h1 {
+        color: #272044;
+        text-align: center;
+        font-size: 44px;
+        line-height: 28px;
+      }
+    
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 20%;
+        border-radius: 10px
+      }
+    
+      p {
+        font-size: 18px;
+        line-height: 28px;
+        font-family: PT Mono, monospace;
+        text-align: center;
+      }
+      button {
+        border-radius: 25px;
+        margin: 0 auto;
+        display: block;
+        background-color: #fff;
+        border: 1px solid #885df1;
+        color: #885df1;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 25px 30px;
+        text-decoration: none;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        color: #fff;
+        background: #885df1;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+       
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        Web Development Portfolio 
+      </h1>
+      <h2>
+        BigAppleEats
+      </h2>
+      <img
+      src="https://image.spreadshirtmedia.com/image-server/v1/mp/products/T1459A839PA3861PT28D1017930708W10000H10000/views/1,width=800,height=800,appearanceId=839,backgroundColor=F2F2F2/big-apple-sticker.jpg"
+      alt="Mobile App"
+    />
+    <p> iOS mobile application built with Expo Go that <br> allows users to discover restaurants in NYC and <br> enhance the overall dining experience for customers</p>
+    <button class="review-button">
+        Review on GitHub
+      </button> 
+    <h2>
+        MealPrep 
+      </h2>
+      <img
+      src="https://www.eatingwell.com/thmb/cmhRzycAoJTVny9M2hRTenAgNr8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/68853872-d292bcc5d6ac45b8a33e3c8002cba32c.jpg"
+      alt="MealPrep"
+      />
+      <p>
+        Recipe website using the React application utilizing <br> React Router for navigation and state management <br> using hooks like useState and useEffect. Sets up a <br> Flask application to handle RESTful API endpoints <br> for cocktail and food recipe review systems
+      </p>
+      <button class="click-button">
+        Review on GitHub
+      </button> 
+      <h2>
+        Python’s Pit
+      </h2>
+      <img
+      src="https://www3.minijuegosgratis.com/v3/games/thumbnails/1295_1.jpg"
+      alt="Snake Game"
+      />
+      <p>
+        The famous snake game coded in Python <br> using Pygame modules, objects, and functions.
+      </p>
+      <button class="snake-button">
+       Review on GitHub
+      </button> 
+    </div>
+    <script>
+      function review() {
+    let project = prompt("Do you want to review this Project?");
+
+    if (project.toLowerCase() === "yes") {
+        window.location.href = "https://github.com/juliecomilla/Mobile-Development";
+    } else {
+        alert("Thank you for considering! If you change your mind, feel free to review later.");
+    }
+}
+
+let reviewButton = document.querySelector(".review-button");
+reviewButton.addEventListener("click", review);
+
+
+    function mealPrep() {
+    let project = prompt("Do you want to review this Project?");
+
+    if (project.toLowerCase() === "yes") {
+        window.location.href = "https://github.com/juliecomilla/mealprep";
+    } else {
+        alert("Thank you for considering! If you change your mind, feel free to review later.");
+    }
+}
+
+let clickButton = document.querySelector(".click-button");
+clickButton.addEventListener("click", mealPrep);
+
+
+    function snake() {
+    let project = prompt("Do you want to review this Project?");
+
+    if (project.toLowerCase() === "yes") {
+        window.location.href = "https://github.com/juliecomilla/Python-Pit";
+    } else {
+        alert("Thank you for considering! If you change your mind, feel free to review later.");
+    }
+}
+
+let snakeButton = document.querySelector(".snake-button");
+snakeButton.addEventListener("click", snake);
+
+
+    </script>
+  </body>
+</html>
